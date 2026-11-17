@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>NFT Market</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="profile">
+    <div class="avatar"></div>
+    <div class="balance"><i class="gem">💎</i><b>0</b><button class="plus">+</button></div>
+    <div class="spacer"></div>
+    <button class="sq" data-i="leaf" style="color:#E66E25"></button>
+    <button class="sq" data-i="bag" style="color:#F5B82E"></button>
+    <button class="sq mute" data-i="horn"></button>
+    <button class="sq mute" data-i="menu"></button>
+  </header>
+
+  <section class="banner">
+    <div class="b-text">
+      <h2>Myth mask улучшена</h2>
+      <p>Торги запущены</p>
+      <button class="cta">Вперед!</button>
+    </div>
+    <div class="mask">🎭</div>
+  </section>
+
+  <nav class="cats">
+    <button class="cat active"><span data-i="gift"></span>Подарки</button>
+    <button class="cat ic" data-i="user"></button>
+    <button class="cat ic" data-i="star"></button>
+    <button class="cat ic" data-i="doc"></button>
+    <button class="cat ic" data-i="plane"></button>
+    <button class="sq cart" data-i="cart"></button>
+  </nav>
+
+  <div class="search-row">
+    <label class="search"><span data-i="search"></span><input id="q" placeholder="Поиск по названию NFT"></label>
+    <button class="feed"><span data-i="list"></span>Feed</button>
+  </div>
+
+  <div class="filters">
+    <button class="f ic" data-i="sliders"></button>
+    <button class="f">NFT <small>∨</small></button>
+    <button class="f">Модель <small>∨</small></button>
+    <button class="f">Фон <small>∨</small></button>
+    <button class="f ic sort" data-i="menu"></button>
+  </div>
+
+  <main id="grid" class="grid"></main>
+</div>
+
+<button class="bulk"><span data-i="cart"></span>Купить оптом</button>
+
+<footer class="tabbar">
+  <button class="tab" data-i="grid">Маркет</button>
+  <button class="tab" data-i="receipt">Ордера</button>
+  <button class="tab" data-i="pad">Игровой хаб</button>
+  <button class="tab active" data-i="leaf">Осенний фест</button>
+  <button class="tab" data-i="box">Хранилище</button>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
